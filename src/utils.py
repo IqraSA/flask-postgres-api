@@ -5,5 +5,5 @@ def get_env_variable(name) -> str:
     try:
         return os.environ[name]
     except KeyError:
-        message = "Expected environment variable '{}' not set.".format(name)
+        message = f"Expected environment variable '{name}' not set."
         raise Exception(message)
